@@ -1,5 +1,5 @@
 /**
- * This file exports type aliases used by the the intv8 comparable package
+ * This file exports type aliases used by the the intv8 compare package
  * and its peer and dependant packages.
  *
  * For type aliases, see ./interfaces.ts.

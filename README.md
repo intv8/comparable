@@ -1,14 +1,14 @@
 <p align="center">
 <!-- Update log -->
 <img alt="intv8 logo" height="70" src="https://raw.githubusercontent.com/intv8/.github/main/profile/img/clr/banner.svg" />
-<strong>comparable</strong>
+<strong>compare</strong>
 </p>
 
 <p align="center">
 intv8 is a collection of easy-to-use utility and feature libraries for creating anything you want with the <a href="https://deno.land">Deno</a> runtime.
 </p>
 
-<h1 align="center">intv8 - comparable</h1>
+<h1 align="center">intv8 - compare</h1>
 
 <p align="center">
 <!-- @TODO Package description -->
@@ -19,21 +19,21 @@ intv8 is a collection of easy-to-use utility and feature libraries for creating 
 </p>
 
 <p align="center">
-<sub>Built with ❤ by integereleven and <a href="https://github.com/intv8/comparable/graphs/contributors">contributors</a></sub>
+<sub>Built with ❤ by integereleven and <a href="https://github.com/intv8/compare/graphs/contributors">contributors</a></sub>
 </p>
 
 <p align="center">
-<a href="https://github.com/intv8/comparable/blob/main/CODE_OF_CONDUCT.md">
+<a href="https://github.com/intv8/compare/blob/main/CODE_OF_CONDUCT.md">
   <img alt="Contributor Covenant" src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=flat-square" />
 </a>
-<a href="https://github.com/intv8/comparable/commits">
-  <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/intv8/comparable?style=flat-square">
+<a href="https://github.com/intv8/compare/commits">
+  <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/intv8/compare?style=flat-square">
 </a>
-<a href="https://github.com/intv8/comparable/releases">
-  <img alt="GitHub release (latest SemVer)" src="https://img.shields.io/github/v/release/intv8/comparable?style=flat-square" />
+<a href="https://github.com/intv8/compare/releases">
+  <img alt="GitHub release (latest SemVer)" src="https://img.shields.io/github/v/release/intv8/compare?style=flat-square" />
 </a>
-<a href="https://github.com/intv8/comparable/issues">
-  <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/intv8/comparable?style=flat-square">
+<a href="https://github.com/intv8/compare/issues">
+  <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/intv8/compare?style=flat-square">
 </a>
 </p>
 
@@ -59,7 +59,7 @@ To install, you simply need to re-export the library features with your `./deps.
 
 ```ts
 // ./deps.ts
-export * from 'https://denopkg.com/intv8/comparable/mod.ts';
+export * from 'https://denopkg.com/intv8/compare/mod.ts';
 //  or specific features
 ```
 
@@ -76,19 +76,19 @@ You can specify a specific branch or release to re-export:
 **Export from a specific branch**
 
 ```ts
-export * from 'https://denopkg.com/intv8/comparable@dev-fix-06145/mod.ts';
+export * from 'https://denopkg.com/intv8/compare@dev-fix-06145/mod.ts';
 ```
 
 **Export from a specific release**
 
 ```ts
-export * from 'https://denopkg.com/intv8/comparable@0.1.0-alpha/mod.ts';
+export * from 'https://denopkg.com/intv8/compare@0.1.0-alpha/mod.ts';
 ```
 
 **Export the latest release**
 
 ```ts
-export * from 'https://denopkg.com/intv8/comparable@latest/mod.ts';
+export * from 'https://denopkg.com/intv8/compare@latest/mod.ts';
 ```
 
 > **Note:** If no branch or tag is specified in the re-export, then it will pull from the main branch, which we only merge into when preparing a release.\
@@ -124,7 +124,7 @@ The MIT License (MIT) 2022 integereleven. Refer to [LICENSE][license] for detail
 </p>
 
 [deno]: https://deno.land "Deno homepage"
-[branches]: https://github.com/intv8/comparable/branches "intv8/comparable branches on GitHub"
-[releases]: https://github.com/intv8/comparable/releases "intv8/comparable releases on GitHub"
-[contributing]: https://github.com/intv8/comparable/blob/main/CONTRIBUTING.md "intv8/comparable contributing guidelines"
-[license]: https://github.com/intv8/comparable/blob/main/LICENSE "intv8/comparable license"
+[branches]: https://github.com/intv8/compare/branches "intv8/compare branches on GitHub"
+[releases]: https://github.com/intv8/compare/releases "intv8/compare releases on GitHub"
+[contributing]: https://github.com/intv8/compare/blob/main/CONTRIBUTING.md "intv8/compare contributing guidelines"
+[license]: https://github.com/intv8/compare/blob/main/LICENSE "intv8/compare license"
