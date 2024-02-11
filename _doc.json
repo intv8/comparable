@@ -1,0 +1,488 @@
+[
+  {
+    "kind": "interface",
+    "name": "TComparable",
+    "location": {
+      "filename": "file:///C:/repos/intv8/comparable/src/types/interfaces.ts",
+      "line": 15,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Provides a mechanism to compare the current class instance to another instance."
+    },
+    "interfaceDef": {
+      "extends": [],
+      "methods": [
+        {
+          "name": "compareTo",
+          "kind": "method",
+          "location": {
+            "filename": "file:///C:/repos/intv8/comparable/src/types/interfaces.ts",
+            "line": 17,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "Compare the current instance to an `other` instance, optionally reversing the equality check."
+          },
+          "optional": false,
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "other",
+              "optional": false,
+              "tsType": {
+                "repr": "ThisType",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": [
+                    {
+                      "repr": "this",
+                      "kind": "this",
+                      "this": true
+                    }
+                  ],
+                  "typeName": "ThisType"
+                }
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "reverse",
+              "optional": false,
+              "tsType": {
+                "repr": "boolean",
+                "kind": "keyword",
+                "keyword": "boolean"
+              }
+            }
+          ],
+          "returnType": {
+            "repr": "ComparisonResult",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "ComparisonResult"
+            }
+          },
+          "typeParams": []
+        }
+      ],
+      "properties": [],
+      "callSignatures": [],
+      "indexSignatures": [],
+      "typeParams": [
+        {
+          "name": "T"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "interface",
+    "name": "TComparer",
+    "location": {
+      "filename": "file:///C:/repos/intv8/comparable/src/types/interfaces.ts",
+      "line": 21,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Provides a mechanism to compare two values of type `T`."
+    },
+    "interfaceDef": {
+      "extends": [],
+      "methods": [
+        {
+          "name": "compare",
+          "kind": "method",
+          "location": {
+            "filename": "file:///C:/repos/intv8/comparable/src/types/interfaces.ts",
+            "line": 23,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "Compare two values of type `T`, returning a {@link ComparisonResult}."
+          },
+          "optional": false,
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "a",
+              "optional": false,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "b",
+              "optional": false,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "reverse",
+              "optional": false,
+              "tsType": {
+                "repr": "boolean",
+                "kind": "keyword",
+                "keyword": "boolean"
+              }
+            }
+          ],
+          "returnType": {
+            "repr": "ComparisonResult",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "ComparisonResult"
+            }
+          },
+          "typeParams": []
+        }
+      ],
+      "properties": [],
+      "callSignatures": [],
+      "indexSignatures": [],
+      "typeParams": [
+        {
+          "name": "T"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "interface",
+    "name": "TSortable",
+    "location": {
+      "filename": "file:///C:/repos/intv8/comparable/src/types/interfaces.ts",
+      "line": 27,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Provides a mechanism to sort an instances properties or indices."
+    },
+    "interfaceDef": {
+      "extends": [
+        {
+          "repr": "Iterable",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": [
+              {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            ],
+            "typeName": "Iterable"
+          }
+        }
+      ],
+      "methods": [
+        {
+          "name": "sort",
+          "kind": "method",
+          "location": {
+            "filename": "file:///C:/repos/intv8/comparable/src/types/interfaces.ts",
+            "line": 29,
+            "col": 2
+          },
+          "jsDoc": {
+            "doc": "Sort or reverse sort properties or indices using a {@link Comparer}."
+          },
+          "optional": false,
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "comparer",
+              "optional": false,
+              "tsType": {
+                "repr": "Comparer",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": [
+                    {
+                      "repr": "T",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "T"
+                      }
+                    }
+                  ],
+                  "typeName": "Comparer"
+                }
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "reverse",
+              "optional": false,
+              "tsType": {
+                "repr": "boolean",
+                "kind": "keyword",
+                "keyword": "boolean"
+              }
+            }
+          ],
+          "returnType": {
+            "repr": "void",
+            "kind": "keyword",
+            "keyword": "void"
+          },
+          "typeParams": []
+        }
+      ],
+      "properties": [],
+      "callSignatures": [],
+      "indexSignatures": [],
+      "typeParams": [
+        {
+          "name": "T"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "enum",
+    "name": "ComparisonResult",
+    "location": {
+      "filename": "file:///C:/repos/intv8/comparable/src/types/enums.ts",
+      "line": 9,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Specifies the comparison result of two values."
+    },
+    "enumDef": {
+      "members": [
+        {
+          "name": "Lesser",
+          "jsDoc": {
+            "doc": "First value is less than the second value."
+          },
+          "location": {
+            "filename": "file:///C:/repos/intv8/comparable/src/types/enums.ts",
+            "line": 11,
+            "col": 2
+          }
+        },
+        {
+          "name": "Equal",
+          "init": {
+            "repr": "0",
+            "kind": "literal",
+            "literal": {
+              "kind": "number",
+              "number": 0.0
+            }
+          },
+          "jsDoc": {
+            "doc": "Two values are equal."
+          },
+          "location": {
+            "filename": "file:///C:/repos/intv8/comparable/src/types/enums.ts",
+            "line": 14,
+            "col": 2
+          }
+        },
+        {
+          "name": "Greater",
+          "init": {
+            "repr": "1",
+            "kind": "literal",
+            "literal": {
+              "kind": "number",
+              "number": 1.0
+            }
+          },
+          "jsDoc": {
+            "doc": "First value is greater than the second value."
+          },
+          "location": {
+            "filename": "file:///C:/repos/intv8/comparable/src/types/enums.ts",
+            "line": 17,
+            "col": 2
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "Comparer",
+    "location": {
+      "filename": "file:///C:/repos/intv8/comparable/src/types/types.ts",
+      "line": 17,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "A {@link TComparer} or {@link ComparerFn} to compare two values."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "",
+        "kind": "union",
+        "union": [
+          {
+            "repr": "TComparer",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": [
+                {
+                  "repr": "T",
+                  "kind": "typeRef",
+                  "typeRef": {
+                    "typeParams": null,
+                    "typeName": "T"
+                  }
+                }
+              ],
+              "typeName": "TComparer"
+            }
+          },
+          {
+            "repr": "ComparerFn",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": [
+                {
+                  "repr": "T",
+                  "kind": "typeRef",
+                  "typeRef": {
+                    "typeParams": null,
+                    "typeName": "T"
+                  }
+                }
+              ],
+              "typeName": "ComparerFn"
+            }
+          }
+        ]
+      },
+      "typeParams": [
+        {
+          "name": "T"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "ComparerFn",
+    "location": {
+      "filename": "file:///C:/repos/intv8/comparable/src/types/types.ts",
+      "line": 14,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "A function that compares two values and returns a {@link ComparisonResult}."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "",
+        "kind": "fnOrConstructor",
+        "fnOrConstructor": {
+          "constructor": false,
+          "tsType": {
+            "repr": "ComparisonResult",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "ComparisonResult"
+            }
+          },
+          "params": [
+            {
+              "kind": "identifier",
+              "name": "a",
+              "optional": false,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "b",
+              "optional": false,
+              "tsType": {
+                "repr": "T",
+                "kind": "typeRef",
+                "typeRef": {
+                  "typeParams": null,
+                  "typeName": "T"
+                }
+              }
+            },
+            {
+              "kind": "identifier",
+              "name": "reverse",
+              "optional": false,
+              "tsType": {
+                "repr": "boolean",
+                "kind": "keyword",
+                "keyword": "boolean"
+              }
+            }
+          ],
+          "typeParams": []
+        }
+      },
+      "typeParams": [
+        {
+          "name": "T"
+        }
+      ]
+    }
+  },
+  {
+    "kind": "variable",
+    "name": "VERSION",
+    "location": {
+      "filename": "file:///C:/repos/intv8/comparable/src/version.ts",
+      "line": 9,
+      "col": 13
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The current release version of the intv8 comparable package."
+    },
+    "variableDef": {
+      "tsType": {
+        "repr": "0.0.1",
+        "kind": "literal",
+        "literal": {
+          "kind": "string",
+          "string": "0.0.1"
+        }
+      },
+      "kind": "const"
+    }
+  }
+]
